@@ -76,13 +76,13 @@ def mfls_predict(dataset, prediction_length):
     print(forecast)
 
 # eval function
-# eval_with_logs(dataset=dataset, prediction_length=prediction_length, num_samples=num_samples)
+eval_with_logs(dataset=dataset, prediction_length=prediction_length, num_samples=num_samples)
 
 # forecast
 # forecast_without_eval(dataset=dataset, prediction_length=prediction_length, num_samples=num_samples)
 
 # mfls_predict(dataset=response["prices"], prediction_length=prediction_length)
 
-catboost_eval(response["prices"], response["total_volumes"], 31)
+# catboost_eval(response["prices"], response["total_volumes"], 31)
 
 exit()
